@@ -1,4 +1,4 @@
-import nlpcloud
+""" import nlpcloud
 import difflib
 import json
 from monkeylearn import MonkeyLearn
@@ -58,4 +58,4 @@ class TextSummarization:
                 return print(self.text.index(kw))
             except:
                 nearest_neighbor = difflib.get_close_matches(kw, self.text_list, n=1, cutoff=0.1)[0]
-                print(self.text.index(nearest_neighbor))
+                print(self.text.index(nearest_neighbor)) """

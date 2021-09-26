@@ -2,11 +2,10 @@ from flask import Flask
 import nlpcloud
 import difflib
 import requests
-from  TextSummarization import TextSummarization
 import json
 from flask import send_file
 app = Flask(__name__)
-textSum =  TextSummarization()
+#textSum =  TextSummarization()
 
 @app.route("/")
 def index():
@@ -17,5 +16,5 @@ def getVoiceData():
     return "SummarizedData!"
 
 @app.route("/GetText/<string:text>")
-def getTextData():
-    return "text"
+def getTextData(text):
+    return text
